@@ -1,145 +1,143 @@
-/* Lumina — color tokens.
-   Dark-mode palette is pixel-sampled from the reference card image
-   (2026-04-21_01-07-38.png). Every hex here corresponds to an actual
-   pixel color in the reference. */
+/* Lumina — Neon edition. Color tokens rebuilt for a cyber / neon aesthetic.
+   Dark mode: deep blue-black base with cyan / violet / pink neon accents. */
 
 :root,
 [data-appearance="light"] {
-  --bg-0: #f4f4f5;
+  --bg-0: #eef1f9;
   --bg-1: #ffffff;
 
   --surface: #ffffff;
   --surface-elev: #ffffff;
-  --surface-sunken: #f4f4f5;
-  --shell-bg: #0f0f10;
-  --shell-top: #111112;
-  --shell-title-bg: #0a0a0b;
-  --shell-divider: rgba(255, 255, 255, 0.05);
+  --surface-sunken: #e9ecf7;
+  --shell-bg: #0f1020;
+  --shell-top: #131426;
+  --shell-title-bg: #0b0c18;
+  --shell-divider: rgba(99, 102, 241, 0.16);
 
-  --border: rgba(24, 24, 27, 0.08);
-  --border-subtle: rgba(24, 24, 27, 0.06);
-  --border-strong: rgba(24, 24, 27, 0.13);
-  --hairline: rgba(24, 24, 27, 0.08);
+  --border: rgba(99, 102, 241, 0.14);
+  --border-subtle: rgba(99, 102, 241, 0.1);
+  --border-strong: rgba(14, 165, 233, 0.28);
+  --hairline: rgba(99, 102, 241, 0.12);
 
-  --text-primary: #18181b;
-  --text-secondary: #52525b;
-  --text-tertiary: #71717a;
+  --text-primary: #13162b;
+  --text-secondary: #48507a;
+  --text-tertiary: #68719b;
   --text-on-strong: #ffffff;
 
-  --fill-primary: #18181b;
-  --fill-secondary: rgba(24, 24, 27, 0.1);
-  --fill-tertiary: rgba(24, 24, 27, 0.05);
+  --fill-primary: #1a1f3d;
+  --fill-secondary: rgba(30, 36, 90, 0.08);
+  --fill-tertiary: rgba(30, 36, 90, 0.04);
 
-  --hover-bg: #f4f4f5;
+  --hover-bg: #f0f2fb;
 
-  --progress-bg: #e4e4e7;
-  --progress-cpu: #3b82f6;
-  --progress-memory: #8b5cf6;
+  --progress-bg: #e4e7f3;
+  --progress-cpu: #0891b2;
+  --progress-memory: #7c3aed;
   --progress-swap: #6366f1;
-  --progress-disk: #e97b35;
-  --progress-network: #10b981;
-  --progress-traffic-from: #3b82f6;
-  --progress-traffic-to: #8b5cf6;
+  --progress-disk: #db2777;
+  --progress-network: #059669;
+  --progress-traffic-from: #0891b2;
+  --progress-traffic-to: #db2777;
 
-  --status-success: #2f9e65;
-  --status-warning: #e9a23b;
-  --status-error: #dc2626;
-  --status-info: #3b82f6;
-  --status-online: #2f9e65;
-  --status-offline: #dc2626;
+  --status-success: #059669;
+  --status-warning: #d97706;
+  --status-error: #e11d48;
+  --status-info: #0891b2;
+  --status-online: #059669;
+  --status-offline: #e11d48;
 
-  --tag-red-bg: #fee2e2;
-  --tag-red-fg: #b91c1c;
-  --tag-gray-bg: #e5e5e5;
-  --tag-gray-fg: #3f3f46;
+  --tag-red-bg: #ffe4ec;
+  --tag-red-fg: #be185d;
+  --tag-gray-bg: #e7e8f2;
+  --tag-gray-fg: #3d4368;
 
   --shadow-card:
-    0 0 0 1px rgba(24, 24, 27, 0.03),
-    0 1px 2px rgba(24, 24, 27, 0.04),
-    0 12px 32px -16px rgba(24, 24, 27, 0.12);
+    0 0 0 1px rgba(99, 102, 241, 0.05),
+    0 2px 6px rgba(30, 36, 90, 0.05),
+    0 14px 34px -18px rgba(99, 102, 241, 0.18);
 
-  --ring: rgba(59, 130, 246, 0.35);
+  --ring: rgba(8, 145, 178, 0.4);
 }
 
 [data-appearance="dark"] {
-  /* Pixel-sampled from reference image */
-  --bg-0: #090909;
-  --bg-1: #0d0d0e;
+  --bg-0: #05060b;
+  --bg-1: #080a12;
 
-  --surface: #0f0f10;
-  --surface-elev: #121214;
-  --surface-sunken: #0b0b0c;
-  --shell-bg: #0d0d0e;
-  --shell-top: #111112;
-  --shell-title-bg: #0a0a0b;
-  --shell-divider: rgba(255, 255, 255, 0.05);
+  --surface: #0a0d17;
+  --surface-elev: #0f1322;
+  --surface-sunken: #070910;
+  --shell-bg: #080a12;
+  --shell-top: #0c0f1c;
+  --shell-title-bg: #05060c;
+  --shell-divider: rgba(139, 92, 246, 0.14);
 
-  --border: rgba(255, 255, 255, 0.055);
-  --border-subtle: rgba(255, 255, 255, 0.04);
-  --border-strong: rgba(255, 255, 255, 0.1);
-  --hairline: rgba(255, 255, 255, 0.06);
+  --border: rgba(139, 92, 246, 0.18);
+  --border-subtle: rgba(139, 92, 246, 0.1);
+  --border-strong: rgba(34, 211, 238, 0.32);
+  --hairline: rgba(139, 92, 246, 0.14);
 
-  --text-primary: #dddddf;
-  --text-secondary: #a5a5aa;
-  --text-tertiary: #76767c;
-  --text-on-strong: #0f0f0f;
+  --text-primary: #e6e9ff;
+  --text-secondary: #a3a9cf;
+  --text-tertiary: #6e76a0;
+  --text-on-strong: #05060b;
 
-  --fill-primary: #e6e6e6;
-  --fill-secondary: rgba(230, 230, 230, 0.075);
-  --fill-tertiary: rgba(230, 230, 230, 0.045);
+  --fill-primary: #dbe4ff;
+  --fill-secondary: rgba(163, 175, 240, 0.09);
+  --fill-tertiary: rgba(163, 175, 240, 0.05);
 
-  --hover-bg: #17171a;
+  --hover-bg: #131728;
 
-  --progress-bg: #26262a;
-  --progress-cpu: #5d88ff;
-  --progress-memory: #a35cf5;
+  --progress-bg: #171b30;
+  --progress-cpu: #22d3ee;
+  --progress-memory: #a78bfa;
   --progress-swap: #818cf8;
-  --progress-disk: #f1873d;
-  --progress-network: #5bbb8a;
-  --progress-traffic-from: #5d88ff;
-  --progress-traffic-to: #a35cf5;
+  --progress-disk: #f472b6;
+  --progress-network: #34d399;
+  --progress-traffic-from: #22d3ee;
+  --progress-traffic-to: #f472b6;
 
-  --status-success: #61c08f;
-  --status-warning: #d4a54a;
-  --status-error: #d84e45;
-  --status-info: #5d88ff;
-  --status-online: #61c08f;
-  --status-offline: #d84e45;
+  --status-success: #34d399;
+  --status-warning: #fbbf24;
+  --status-error: #fb7185;
+  --status-info: #22d3ee;
+  --status-online: #34d399;
+  --status-offline: #fb7185;
 
-  --tag-red-bg: #9e3426;
-  --tag-red-fg: #ececee;
-  --tag-gray-bg: #26262a;
-  --tag-gray-fg: #dedee1;
+  --tag-red-bg: #5c1530;
+  --tag-red-fg: #fda4b9;
+  --tag-gray-bg: #1c2036;
+  --tag-gray-fg: #c9cdea;
 
   --shadow-card:
-    0 0 0 1px rgba(255, 255, 255, 0.012),
-    0 1px 2px rgba(0, 0, 0, 0.05),
-    0 10px 20px -20px rgba(0, 0, 0, 0.35);
+    0 0 0 1px rgba(139, 92, 246, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.45),
+    0 16px 40px -20px rgba(0, 0, 0, 0.6),
+    0 0 28px -10px rgba(34, 211, 238, 0.14);
 
-  --ring: rgba(93, 136, 255, 0.46);
+  --ring: rgba(34, 211, 238, 0.5);
 }
 
-/* Tag palette — DStatus-style pills colored by tag color name */
+/* Tag palette — neon-tinted pills colored by tag color name */
 [data-tag="ruby"],
 [data-tag="red"],
 [data-tag="tomato"],
 [data-tag="crimson"] {
-  --tag-bg: var(--tag-red-bg);
-  --tag-fg: var(--tag-red-fg);
+  --tag-bg: rgba(251, 113, 133, 0.16);
+  --tag-fg: #fb7185;
   --tag-border: transparent;
 }
 [data-tag="gold"],
 [data-tag="amber"],
 [data-tag="yellow"] {
-  --tag-bg: rgba(233, 162, 59, 0.16);
-  --tag-fg: #e9a23b;
+  --tag-bg: rgba(251, 191, 36, 0.16);
+  --tag-fg: #fbbf24;
   --tag-border: transparent;
 }
 [data-tag="orange"],
 [data-tag="bronze"],
 [data-tag="brown"] {
-  --tag-bg: rgba(233, 123, 53, 0.16);
-  --tag-fg: #e97b35;
+  --tag-bg: rgba(251, 146, 60, 0.16);
+  --tag-fg: #fb923c;
   --tag-border: transparent;
 }
 [data-tag="green"],
@@ -147,16 +145,16 @@
 [data-tag="mint"],
 [data-tag="jade"],
 [data-tag="lime"] {
-  --tag-bg: rgba(84, 180, 132, 0.16);
-  --tag-fg: #54b484;
+  --tag-bg: rgba(52, 211, 153, 0.16);
+  --tag-fg: #34d399;
   --tag-border: transparent;
 }
 [data-tag="blue"],
 [data-tag="sky"],
 [data-tag="cyan"],
 [data-tag="teal"] {
-  --tag-bg: rgba(78, 129, 238, 0.16);
-  --tag-fg: #4e81ee;
+  --tag-bg: rgba(34, 211, 238, 0.16);
+  --tag-fg: #22d3ee;
   --tag-border: transparent;
 }
 [data-tag="violet"],
@@ -165,8 +163,8 @@
 [data-tag="iris"],
 [data-tag="indigo"],
 [data-tag="pink"] {
-  --tag-bg: rgba(157, 90, 239, 0.16);
-  --tag-fg: #9d5aef;
+  --tag-bg: rgba(167, 139, 250, 0.16);
+  --tag-fg: #a78bfa;
   --tag-border: transparent;
 }
 [data-tag="gray"],
