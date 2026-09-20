@@ -8,7 +8,7 @@
     system-ui, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, monospace;
 
-  --radius-card: 12px;
+  --radius-card: 14px;
   --radius-field: 10px;
   --radius-pill: 999px;
 }
@@ -24,13 +24,33 @@
   letter-spacing: -0.003em;
 }
 
+html {
+  background: var(--bg-0);
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: var(--bg-0);
   color: var(--text-primary);
+}
+
+/* Neon ambient glow — cyan top-left, violet top-right, pink bottom. */
+[data-appearance="light"] body {
+  background:
+    radial-gradient(1000px 560px at 10% -10%, rgba(14, 165, 233, 0.07), transparent 60%),
+    radial-gradient(900px 520px at 90% -8%, rgba(124, 58, 237, 0.07), transparent 55%),
+    radial-gradient(760px 640px at 50% 118%, rgba(219, 39, 119, 0.04), transparent 60%),
+    var(--bg-0);
+}
+
+[data-appearance="dark"] body {
+  background:
+    radial-gradient(1100px 620px at 12% -12%, rgba(34, 211, 238, 0.1), transparent 62%),
+    radial-gradient(960px 560px at 88% -14%, rgba(167, 139, 250, 0.12), transparent 58%),
+    radial-gradient(820px 700px at 50% 122%, rgba(244, 114, 182, 0.07), transparent 60%),
+    var(--bg-0);
 }
 
 * {
@@ -75,7 +95,7 @@ html.theme-flip *::after {
   border-radius: inherit;
 }
 
-/* Scrollbar: thin, subtle */
+/* Scrollbar: thin, subtle, neon-tinted */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
